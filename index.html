@@ -1,414 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
-<link rel="manifest" href="./Favicon/site.webmanifest">
-<link rel="mask-icon" href="./Favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
- 
-<title>Finance Ledger</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./Favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./Favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-<link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="header">
-    <a class="logo link" href="./index.html">
-      <img class="logo__img" src="./Logo.svg" alt="logo"><span class="accent">Finance</span>  Ledger</a>
-    <nav class="header-nav ">
-      <ul class="header-nav__list list">
-        <li class="header-nav__item"><a class="header-nav__link link" href="">Home</a></li>
-        <li class="header-nav__item"><a class="header-nav__link link" href="">About</a></li>
-        <li class="header-nav__item"><a class="header-nav__link link" href="">Cases</a></li>
-        <li class="header-nav__item"><a class="header-nav__link link" href="">Blog</a></li>
-        <li class="header-nav__item"><a class="header-nav__link link" href="">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!--main-->
-  <main>
-<!--hero-->
-<section class="hero">
-<div class="hero__container container">
-<h1 class="hero__title">The Sky Is The Limit</h1>
-<p class="hero__description title">We provide world class financial assistance</p>
-<button class="button hero__btn" type="button">Read More</button>
-</div>
-</section>
-<!--about-->
-<section class="about container">
-  <h2 class="visually-hidden">About us</h2>
-<ul class="about__list list card-set">
-  <li class="about__item  card-set__itemlink">
-    <div class="about__icon about-icon-place">
-      <svg width="33" height="31">
-        <use href="./images/svg/symbol-defs.svg#icon-bank"></use>
-      </svg>
-    </div>
-    <h3 class="about__subtitle">Investmant Banking</h3>
-    <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
-  </li>
-  <li class="about__item card-set__item link">
-    <div class="about__icon about-icon-place">
-      <svg width="33" height="31">
-        <use href="./images/svg/symbol-defs.svg#icon-book"></use>
-      </svg>
-    </div>
-    <h3 class="about__subtitle">Portfolio Manager</h3>
-    <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
-  </li>
-  <li class="about__item card-set__item link">
-    <div class="about__icon about-icon-place">
-      <svg width="33" height="31">
-        <use href="./images/svg/symbol-defs.svg#icon-pen"></use>
-      </svg>
-    </div>
-    <h3 class="about__subtitle">Tax & Custudio</h3>
-    <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
-  </li>
-</ul>
-</section>
-<!--solutions-->
-<section class="solutions">
-  <div class="solutions__container container">
-    <img class="solutions__img" src="" alt="team">
-  <div class="solutions__box">
-  <p class="solutions__subtitle">What you are looking for</p>
-  <h2 class="solutions__title">We provide bespoke solutions</h2>
-  <p class="solutions__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-  <button type="button" class="solutions__btn">Read More</button>
-  </div>
-  </div>
-</section>
+    <title>Finance Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
-<!--cases-->
-<section class="cases container">
-  <p class="cases__subtitle">This is what we do</p>
-  <h2 class="cases__title">Business Cases</h2>
-  <p class="cases__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-  <ul class="cases__list card-set list">
-    <li class="cases__item card-set__item">
-      <picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/1_L.jpg 1x, ./images/cases/1@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/1_M.jpg 1x, ./images/cases/1@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/1_S.jpg 1x, ./images/cases/1@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/1_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/2_L.jpg 1x, ./images/cases/2@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/2_M.jpg 1x, ./images/cases/2@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/2_S.jpg 1x, ./images/cases/2@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/2_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/3_L.jpg 1x, ./images/cases/3@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/3_M.jpg 1x, ./images/cases/3@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/3_S.jpg 1x, ./images/cases/3@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/3_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/4_L.jpg 1x, ./images/cases/4@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/4_M.jpg 1x, ./images/cases/4@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/4_S.jpg 1x, ./images/cases/4@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/4_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/5_L.jpg 1x, ./images/cases/5@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/5_M.jpg 1x, ./images/cases/5@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/5_S.jpg 1x, ./images/cases/5@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/5_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-        <source
-        media="(min-width: 1200px)"
-        srcset="./images/cases/6_L.jpg 1x, ./images/cases/6@2x_L.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(min-width: 768px)"
-        srcset="./images/cases/6_M.jpg 1x, ./images/cases/6@2x_M.jpg 2x "
-        type="image/jpg" 
-        />
-        <source
-        media="(max-width: 767px)"
-        srcset="./images/cases/6_S.jpg 1x, ./images/cases/6@2x_S.jpg 2x "
-        type="image/jpg" 
-        />
-      <img class="cases__img" src="./images/cases/6_S.jpg" alt="picture one" width="264" height="176"/>
-      </picture>
-    </li>
-    <li class="cases__item card-set__item"><picture>
-      <source
-      media="(min-width: 1200px)"
-      srcset="./images/cases/7_L.jpg 1x, ./images/cases/7@2x_L.jpg 2x "
-      type="image/jpg" 
-      />
-      <source
-      media="(min-width: 768px)"
-      srcset="./images/cases/7_M.jpg 1x, ./images/cases/7@2x_M.jpg 2x "
-      type="image/jpg" 
-      />
-      <source
-      media="(max-width: 767px)"
-      srcset="./images/cases/7_S.jpg 1x, ./images/cases/7@2x_S.jpg 2x "
-      type="image/jpg" 
-      />
-    <img class="cases__img" src="./images/cases/7_S.jpg" alt="picture one" width="264" height="176"/>
-    </picture>
-  </li>
-  <li class="cases__item card-set__item"><picture>
-    <source
-    media="(min-width: 1200px)"
-    srcset="./images/cases/8_L.jpg 1x, ./images/cases/8@2x_L.jpg 2x "
-    type="image/jpg" 
-    />
-    <source
-    media="(min-width: 768px)"
-    srcset="./images/cases/8_M.jpg 1x, ./images/cases/8@2x_M.jpg 2x "
-    type="image/jpg" 
-    />
-    <source
-    media="(max-width: 767px)"
-    srcset="./images/cases/8_S.jpg 1x, ./images/cases/8@2x_S.jpg 2x "
-    type="image/jpg" 
-    />
-  <img class="cases__img" src="./images/cases/8_S.jpg" alt="picture one" width="264" height="176"/>
-  </picture>
-</li>
-  </ul>
-</section>
-`<!--blog-->
-<section class="blog">
- <div class="blog__boxes container">
-  <div class="blog__box">
-  <p class="blog__date">April 16 2020</p>
-  <h2 class="blog__title">Blog Post One</h2>
-  <p class="blog__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-  <button class="button button--green" type="button">Read Our Blog</button>
-  </div>
-  <img src="" alt="desktop" class="blog__img">
- </div>
-</section>
-<!--team-->
-<section class="team ">
-<div class="container team__container">
-  <p class="team__text">Who we are</p>
-<h2 class="team__title">Our Professional Team</h2>
-<p class="team__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-<ul class="team__list list card-set">
-  <li class="team__item card-set__item">
-    <div class="card">
-      <img src="./images/team/John_L.jpg" alt="employee" width="420">
-      <ul class="card-actions list">
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="card-list__box">
-      <h3 class="card-list__title">John Doe</h3>
-      <p class="card-list__subtitle">President</p>
-    </div>
-  </li>
-  <li class="team__item card-set__item">
-    <div class="card">
-      <img src="./images/team/Jane_L.jpg" alt="employee" width="420">
-      <ul class="card-actions list">
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="card-list__box">
-      <h3 class="card-list__title">Jane Doe</h3>
-      <p class="card-list__subtitle">Vice President</p>
-    </div>
-  </li>
-  <li class="team__item card-set__item">
-    <div class="card">
-      <img src="./images/team/Steve_L.jpg" alt="employee" width="420">
-      <ul class="card-actions list">
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="card-actions__item">
-          <a href="" class="card-actions__link link">
-            <svg class="card-actions__icon" width="35" height="35">
-              <use href="./images/svg/symbol-defs.svg#in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="card-list__box">
-      <h3 class="card-list__title">Steve Smith</h3>
-      <p class="card-list__subtitle">Marketing Head</p>
-    </div>
-  </li>
-</ul>
-</div>
-</section>
-<!--Request Callback-->
-<section class=" container">
-  <div class="request-container">
-    <img src="./images/callback-form/callback_L.jpg" alt="request">
-   <div class="request">
-    <h2 class="request__title">Request Callback</h2>
-    <form action="">
-      <div>
-        <input type="name" placeholder="Enter your name" class="field-name">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="container">
+        <a class="logo link" href="./index.html">
+          <img class="logo__img" src="./Logo.svg" alt="logo" /><span class="accent">Finance</span>
+          Ledger</a
+        >
+        <nav class="header-nav">
+          <ul class="header-nav__list list">
+            <li class="header-nav__item"><a class="header-nav__link link" href="">Home</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="">About</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="">Cases</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="">Blog</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-        <div>
-          <input type="email" placeholder="Enter email*" autocomplete="on" class="field-email">
+    </header>
+    <!--main-->
+    <main>
+      <!--hero-->
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">The Sky Is The Limit</h1>
+          <p class="hero__description title">We provide world class financial assistance</p>
+          <button class="button hero__btn" type="button">Read More</button>
         </div>
-          <button type="submit" class="send-button">Send</button>
-      </form>
-   </div>
- </div>
-</section>
+      </section>
+      <!--about-->
+      <section class="about container">
+        <h2 class="visually-hidden">About us</h2>
+        <ul class="about__list list card-set">
+          <li class="about__item card-set__itemlink">
+            <div class="about__icon about-icon-place">
+              <svg width="33" height="31">
+                <use href="./images/svg/symbol-defs.svg#icon-bank"></use>
+              </svg>
+            </div>
+            <h3 class="about__subtitle">Investmant Banking</h3>
+            <p class="about__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
+          </li>
+          <li class="about__item card-set__item link">
+            <div class="about__icon about-icon-place">
+              <svg width="33" height="31">
+                <use href="./images/svg/symbol-defs.svg#icon-book"></use>
+              </svg>
+            </div>
+            <h3 class="about__subtitle">Portfolio Manager</h3>
+            <p class="about__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
+          </li>
+          <li class="about__item card-set__item link">
+            <div class="about__icon about-icon-place">
+              <svg width="33" height="31">
+                <use href="./images/svg/symbol-defs.svg#icon-pen"></use>
+              </svg>
+            </div>
+            <h3 class="about__subtitle">Tax & Custudio</h3>
+            <p class="about__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!--solutions-->
+      <section class="solutions">
+        <div class="solutions__container container">
+          <img class="solutions__img" src="" alt="team" />
+          <div class="solutions__box">
+            <p class="solutions__subtitle">What you are looking for</p>
+            <h2 class="solutions__title">We provide bespoke solutions</h2>
+            <p class="solutions__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button type="button" class="solutions__btn">Read More</button>
+          </div>
+        </div>
+      </section>
 
-  </main>
-</body>
+      <!--cases-->
+      <section class="cases container">
+        <p class="cases__subtitle">This is what we do</p>
+        <h2 class="cases__title">Business Cases</h2>
+        <p class="cases__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+        </p>
+        <ul class="cases__list card-set list">
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/1_L.jpg 1x, ./images/cases/1@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/1_M.jpg 1x, ./images/cases/1@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/1_S.jpg 1x, ./images/cases/1@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/1_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/2_L.jpg 1x, ./images/cases/2@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/2_M.jpg 1x, ./images/cases/2@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/2_S.jpg 1x, ./images/cases/2@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/2_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/3_L.jpg 1x, ./images/cases/3@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/3_M.jpg 1x, ./images/cases/3@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/3_S.jpg 1x, ./images/cases/3@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/3_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/4_L.jpg 1x, ./images/cases/4@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/4_M.jpg 1x, ./images/cases/4@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/4_S.jpg 1x, ./images/cases/4@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/4_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/5_L.jpg 1x, ./images/cases/5@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/5_M.jpg 1x, ./images/cases/5@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/5_S.jpg 1x, ./images/cases/5@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/5_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/6_L.jpg 1x, ./images/cases/6@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/6_M.jpg 1x, ./images/cases/6@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/6_S.jpg 1x, ./images/cases/6@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/6_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/7_L.jpg 1x, ./images/cases/7@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/7_M.jpg 1x, ./images/cases/7@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/7_S.jpg 1x, ./images/cases/7@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/7_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+          <li class="cases__item card-set__item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/cases/8_L.jpg 1x, ./images/cases/8@2x_L.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/cases/8_M.jpg 1x, ./images/cases/8@2x_M.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/cases/8_S.jpg 1x, ./images/cases/8@2x_S.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="cases__img"
+                src="./images/cases/8_S.jpg"
+                alt="picture one"
+                width="264"
+                height="176"
+              />
+            </picture>
+          </li>
+        </ul>
+      </section>
+      `<!--blog-->
+      <section class="blog">
+        <div class="blog__boxes container">
+          <div class="blog__box">
+            <p class="blog__date">April 16 2020</p>
+            <h2 class="blog__title">Blog Post One</h2>
+            <p class="blog__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button class="button button--green" type="button">Read Our Blog</button>
+          </div>
+          <img src="" alt="desktop" class="blog__img" />
+        </div>
+      </section>
+      <!--team-->
+      <section class="team">
+        <div class="container team__container">
+          <p class="team__text">Who we are</p>
+          <h2 class="team__title">Our Professional Team</h2>
+          <p class="team__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="team__list list card-set">
+            <li class="team__item card-set__item">
+              <div class="card">
+                <img src="./images/team/John_L.jpg" alt="employee" width="420" />
+                <ul class="card-actions list">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-list__box">
+                <h3 class="card-list__title">John Doe</h3>
+                <p class="card-list__subtitle">President</p>
+              </div>
+            </li>
+            <li class="team__item card-set__item">
+              <div class="card">
+                <img src="./images/team/Jane_L.jpg" alt="employee" width="420" />
+                <ul class="card-actions list">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-list__box">
+                <h3 class="card-list__title">Jane Doe</h3>
+                <p class="card-list__subtitle">Vice President</p>
+              </div>
+            </li>
+            <li class="team__item card-set__item">
+              <div class="card">
+                <img src="./images/team/Steve_L.jpg" alt="employee" width="420" />
+                <ul class="card-actions list">
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="card-actions__item">
+                    <a href="" class="card-actions__link link">
+                      <svg class="card-actions__icon" width="35" height="35">
+                        <use href="./images/svg/symbol-defs.svg#in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-list__box">
+                <h3 class="card-list__title">Steve Smith</h3>
+                <p class="card-list__subtitle">Marketing Head</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Request Callback-->
+      <section class="request-callback">
+        <div class="request-container container">
+          <img src="./images/callback-form/callback_L.jpg" alt="request" />
+          <div class="request">
+            <h2 class="request__title">Request Callback</h2>
+            <form action="">
+              <div>
+                <input type="name" placeholder="Enter your name" class="field-name" />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Enter email*"
+                  autocomplete="on"
+                  class="field-email"
+                />
+              </div>
+              <button type="submit" class="send-button">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <ul class="card-actions list">
+        <li class="card-actions__item">
+          <a href="" class="card-actions__link link">
+            <svg class="card-actions__icon" width="35" height="35">
+              <use href="./images/svg/symbol-defs.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="card-actions__item">
+          <a href="" class="card-actions__link link">
+            <svg class="card-actions__icon" width="35" height="35">
+              <use href="./images/svg/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="card-actions__item">
+          <a href="" class="card-actions__link link">
+            <svg class="card-actions__icon" width="35" height="35">
+              <use href="./images/svg/symbol-defs.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="card-actions__item">
+          <a href="" class="card-actions__link link">
+            <svg class="card-actions__icon" width="35" height="35">
+              <use href="./images/svg/symbol-defs.svg#in"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p>Copyright © 2021 - FinanceLedger</p>
+    </footer>
+  </body>
 </html>
