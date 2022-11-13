@@ -24,7 +24,7 @@
   <header class="header">
     <a class="logo link" href="./index.html">
       <img class="logo__img" src="./Logo.svg" alt="logo"><span class="accent">Finance</span>  Ledger</a>
-    <nav class="header-nav c">
+    <nav class="header-nav ">
       <ul class="header-nav__list list">
         <li class="header-nav__item"><a class="header-nav__link link" href="">Home</a></li>
         <li class="header-nav__item"><a class="header-nav__link link" href="">About</a></li>
@@ -40,20 +40,36 @@
 <section class="hero">
 <h1 class="hero__title">The Sky Is The Limit</h1>
 <p class="hero__description title">We provide world class financial assistance</p>
-<button class="button" type="button">Read More</button>
+<button class="button hero__btn" type="button">Read More</button>
 </section>
 <!--about-->
-<section class="about">
+<section class="about container">
+  <h2 class="visually-hidden">About us</h2>
 <ul class="about__list list">
   <li class="about__item link">
+    <div class="about__icon about-icon-place">
+      <svg width="33" height="31">
+        <use href=""></use>
+      </svg>
+    </div>
     <h3 class="about__subtitle">Investmant Banking</h3>
     <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
   </li>
   <li class="about__item link">
+    <div class="about__icon about-icon-place">
+      <svg width="33" height="31">
+        <use href=""></use>
+      </svg>
+    </div>
     <h3 class="about__subtitle">Portfolio Manager</h3>
     <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
   </li>
   <li class="about__item link">
+    <div class="about__icon about-icon-place">
+      <svg width="33" height="31">
+        <use href=""></use>
+      </svg>
+    </div>
     <h3 class="about__subtitle">Tax & Custudio</h3>
     <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, necessitatibus!</p>
   </li>
@@ -61,38 +77,73 @@
 </section>
 <!--solutions-->
 <section class="solutions">
-  <img src="" alt="">
-  <p>What you are looking for</p>
-  <h2>We provide bespoke solutions</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-  <button type="button">Read More</button>
+  <div class="solutions__container container">
+    <img class="solutions__img" src="" alt="team">
+  <div class="solutions__box">
+  <p class="solutions__subtitle">What you are looking for</p>
+  <h2 class="solutions__title">We provide bespoke solutions</h2>
+  <p class="solutions__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
+  <button type="button" class="solutions__btn">Read More</button>
+  </div>
+  </div>
 </section>
 
 <!--cases-->
-<section class="cases">
-  <p>This is what we do</p>
-  <h2>Business Cases</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-  <ul>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
+<section class="cases container">
+  <p class="cases__subtitle">This is what we do</p>
+  <h2 class="cases__title">Business Cases</h2>
+  <p class="cases__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+  <ul class="cases__list list">
+    <li class="cases__item"><img src="" alt=""></li>
+    <li class="cases__item"><img src="" alt=""></li>
+    <li class="cases__item"><img src="" alt=""></li>
+    <li class="cases__item"><img src="" alt=""></li>
+    <li class="cases__item"><img src="" alt=""></li>
+    <li class="cases__item"><img src="" alt=""></li>
   </ul>
 </section>
 `<!--blog-->
 <section class="blog">
-  <p>April 16 2020</p>
-  <h2>Blog Post One</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
-  <button type="button">Read Our Blog</button>
-  <img src="" alt="">
+ <div class="blog__boxes container">
+  <div class="blog__box">
+  <p class="blog__date">April 16 2020</p>
+  <h2 class="blog__title">Blog Post One</h2>
+  <p class="blog__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?</p>
+  <button class="button button--green" type="button">Read Our Blog</button>
+  </div>
+  <img src="" alt="desktop" class="blog__img">
+ </div>
 </section>
 <!--team-->
-<section class="team">
-p+h2+p+ul>li*3>
+<section class="team ">
+<div class="container team__container">
+  <p class="team__text"></p>
+<h2 class="team__title"></h2>
+<p class="team__subtitle"></p>
+<ul class="team__list list">
+  <li>
+    <a href="">
+      <svg>
+        <use></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <svg>
+        <use></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <svg>
+        <use></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+</div>
 </section>
   </main>
 </body>
