@@ -177,46 +177,46 @@
           <ul class="list cases-cards gallery">
             <li class="item">
               <a href="/src/images/cases/Rectangle1_3x.jpg">
-                <img src="./images/cases/cases-1.jpg" alt="team meeting" />
+                <img src="./images/cases/1_L.jpg" alt="team meeting" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle2_3x.jpg">
-                <img src="./images/cases/cases-2.jpg" alt="laptop on the table" />
+                <img src="./images/cases/2_L.jpg" alt="laptop on the table" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle3_3x.jpg">
-                <img src="./images/cases/cases-3.jpg" alt="work with diagrams" />
+                <img src="./images/cases/3_L.jpg" alt="work with diagrams" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle4_3x.jpg">
                 <img
-                  src="./images/cases/cases-4.jpg"
+                  src="./images/cases/4_L.jpg"
                   alt="clouds over the buildings"
                 />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle5_3x.jpg">
-                <img src="./images/cases/cases-5.jpg" alt="business handshake" />
+                <img src="./images/cases/5_L.jpg" alt="business handshake" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle6_3x.jpg">
-                <img src="./images/cases/cases-6.jpg" alt="teamleader with team" />
+                <img src="./images/cases/6_L.jpg" alt="teamleader with team" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle7_3x.jpg">
-                <img src="./images/cases/cases-7.jpg" alt="the team`s decision" />
+                <img src="./images/cases/7_L.jpg" alt="the team`s decision" />
               </a>
             </li>
             <li class="item">
               <a href="/src/images/cases/Rectangle8_3x.jpg">
                 <img
-                  src="./images/cases/cases-8.jpg"
+                  src="./images/cases/8_L.jpg"
                   alt="the team`s communication"
                 />
               </a>
@@ -239,8 +239,20 @@
       
             <button class="button button--green">Read Our Blog</button>
           </div>
-      
-          <picture>
+          <picture >
+            <source
+              media="(min-width: 1200px)"
+              srcset=" ./images/blog/blog_L.jpg 1x, ./images/blog/blog@2x_L.jpg  2x"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/blog/blog_M.jpg  1x, ./images/blog/blog@2x_M.jpg  2x"
+              type="image/jpg"
+            />
+            <img class="img-post" src="./images/blog/blog_S.jpg" alt="blog" width="680" height="517" />
+          </picture>
+          <!-- <picture>
             <source
               srcset="
                 ./images/posts/post-320.webp     320w,
@@ -270,7 +282,7 @@
               width="680"
               height="517"
             />
-          </picture>
+          </picture> -->
         </div>
       </section>
       <!--team-->
@@ -287,7 +299,20 @@
             <!-- Первая карточка -->
             <li class="card-list__item">
               <div class="card">
-                <picture>
+                <picture >
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=" ./images/team/John_L.jpg 1x, ./images/team/John@2x_L.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/John_M.jpg  1x, ./images/team/John@2x_M.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <img class="" src="./images/team/John_S.jpg" alt="John Doe" width="420" height="280" />
+                </picture>
+                <!-- <picture>
                   <source
                     srcset="
                       ./images/team/john-420.webp    420w,
@@ -316,13 +341,13 @@
                     width="420"
                     height="280"
                   />
-                </picture>
+                </picture> -->
                 <div class="overlay">
                   <ul class="list card-actions card--absolut">
                     <li class="card-actions__item">
                       <a href="#" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#fs"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                       </a>
                     </li>
@@ -330,7 +355,7 @@
                     <li class="card-actions__item">
                       <a href="#" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#tw"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                       </a>
                     </li>
@@ -338,7 +363,7 @@
                     <li class="card-actions__item">
                       <a href="#" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#you"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
                         </svg>
                       </a>
                     </li>
@@ -346,7 +371,7 @@
                     <li class="card-actions__item">
                       <a href="#" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#lin"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-in"></use>
                         </svg>
                       </a>
                     </li>
@@ -362,7 +387,20 @@
             <!-- Вторая карточка -->
             <li class="card-list__item">
               <div class="card">
-                <picture>
+                <picture >
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=" ./images/team/Jane_L.jpg 1x, ./images/team/Jane@2x_L.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/Jane_M.jpg  1x, ./images/team/Jane@2x_M.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <img class="" src="./images/team/Jane_S.jpg" alt="Jane Doe" width="420" height="280" />
+                </picture>
+                <!-- <picture>
                   <source
                     srcset="
                       ./images/team/jane-420.webp    420w,
@@ -391,13 +429,13 @@
                     width="420"
                     height="280"
                   />
-                </picture>
+                </picture> -->
                 <div class="overlay">
                   <ul class="list card-actions card--absolut">
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#fs"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                       </a>
                     </li>
@@ -405,7 +443,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#tw"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                       </a>
                     </li>
@@ -413,7 +451,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#you"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
                         </svg>
                       </a>
                     </li>
@@ -421,7 +459,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#lin"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-in"></use>
                         </svg>
                       </a>
                     </li>
@@ -436,7 +474,20 @@
             <!-- Третья карточка -->
             <li class="card-list__item">
               <div class="card">
-                <picture>
+                <picture >
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=" ./images/team/Steve_L.jpg 1x, ./images/team/Steve@2x_L.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/Steve_M.jpg  1x, ./images/team/Steve@2x_M.jpg  2x"
+                    type="image/jpg"
+                  />
+                  <img class="" src="./images/team/Steve_S.jpg" alt="Steve Smith" width="420" height="280" />
+                </picture>
+                <!-- <picture>
                   <source
                     srcset="
                       ./images/team/steve-420.webp    420w,
@@ -465,13 +516,13 @@
                     width="420"
                     height="280"
                   />
-                </picture>
+                </picture> -->
                 <div class="overlay">
                   <ul class="list card-actions card--absolut">
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#fs"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                       </a>
                     </li>
@@ -479,7 +530,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#tw"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                       </a>
                     </li>
@@ -487,7 +538,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#you"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
                         </svg>
                       </a>
                     </li>
@@ -495,7 +546,7 @@
                     <li class="card-actions__item">
                       <a href="" class="card-actions__link link">
                         <svg class="card-actions__icon" width="35" height="35">
-                          <use href="./images/defs.svg#lin"></use>
+                          <use href="./images/svg/symbol-defs.svg#icon-in"></use>
                         </svg>
                       </a>
                     </li>
@@ -514,7 +565,7 @@
       <!--Request Callback-->
       <section class="request">
         <div class="container">
-          <img src="./images/request/request.jpg" alt="request" />
+          <img src="./images/callback-form/callback_L.jpg" alt="request" />
           <div class="request-wrapper">
             <h2 class="request-title">Request Callback</h2>
             <form class="">
@@ -529,7 +580,7 @@
                   class="field-email"
                 />
               </div>
-              <button type="submit" class="send-button">Send</button>
+              <button type="submit" class="send-button button">Send</button>
             </form>
           </div>
         </div>
@@ -542,7 +593,7 @@
           <li class="card-actions__item">
             <a href="" class="card-actions__link link">
               <svg class="card-actions__icon" width="35" height="35">
-                <use href="./images/defs.svg#fs"></use>
+                <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -550,7 +601,7 @@
           <li class="card-actions__item">
             <a href="" class="card-actions__link link">
               <svg class="card-actions__icon" width="35" height="35">
-                <use href="./images/defs.svg#tw"></use>
+                <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -558,7 +609,7 @@
           <li class="card-actions__item">
             <a href="" class="card-actions__link link">
               <svg class="card-actions__icon" width="35" height="35">
-                <use href="./images/defs.svg#you"></use>
+                <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -566,7 +617,7 @@
           <li class="card-actions__item">
             <a href="" class="card-actions__link link">
               <svg class="card-actions__icon" width="35" height="35">
-                <use href="./images/defs.svg#lin"></use>
+                <use href="./images/svg/symbol-defs.svg#icon-in"></use>
               </svg>
             </a>
           </li>

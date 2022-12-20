@@ -624,4 +624,34 @@ address {
     width: 20px;
     height: 20px;
   }
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--primary-white-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }/*# sourceMappingURL=main.css.map */
